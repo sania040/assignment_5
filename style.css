@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "Upwork";
+    src: url(./Merriweather-Bold/merriweather/Merriweather-Regular.ttf);
+}
+@font-face {
+    font-family: "upwork-light";
+    src: url(./Merriweather-Bold/merriweather/Merriweather-LightItalic.ttf);
+}
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* Styling border */
+hr {
+    border: none;
+    border-top: 0.5px solid #ccc;
+}
+
+/* main header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Header on left end */
+.header-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* The header on right end */
+.header-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Setting paddding margin of all the header divs */
+.logo-img,
+.nav-head,
+.search-bar,
+.buttons {
+    padding: 5px;
+    margin-left: 40px;
+}
+
+/* Styling header links */
+.nav-head a{
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+    color: #333; 
+    font-weight: normal; 
+    font-size: 14px; 
+    font-family: sans-serif;
+
+}
+
+
+/* Setting search bar position to relative so that icon could fit */
+.search-bar {
+    position: relative;
+
+}
+
+/* Positioning and styling input field */
+.input-field {
+    padding: 10px;
+    width: 300px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    margin-left: 11px;
+  
+}
+
+/* Positioning search icon */
+.search-bar>i {
+    position: absolute;
+    top: 21px;
+    right: 253px;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+
+/* Setting input */
+input[type="text"] {
+    flex-grow: 1;
+    /* Allow the input to grow and fill the available space */
+    border: none;
+    /* Remove the input border */
+    outline: none;
+    /* Remove the input focus outline */
+    padding-left: 10px;
+}
+
+/* Adding spacing between placeholder and icon */
+.fa-magnifying-glass {
+    margin-right: 50px;
+}
+
+/* Add styles for the additional text container */
+.add-con {
+    position: absolute;
+    top: 20px;
+    right: 15px; 
+    transform: translateY(-50%);
+    color: #333; 
+    font-weight: 500; 
+    font-size: 14px; 
+    font-family: sans-serif;
+}
+
+/* Style the search bar */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 261px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/* Add the vertical partition line with increased height */
+.search-bar::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 83px;
+    transform: translateY(-50%);
+    background-color: #3a3939;
+    height: 20px; /* Adjust the height to match the search bar */
+    width: 2px;
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+/* Style the Font Awesome icon */
+.fa-angle-down {
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-left: 5px; /* Adjust the spacing between the text and the icon */
+    color: #333; /* Adjust the icon color */
+    vertical-align: middle; /* Align the icon vertically with text */
+}
+.buttons{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+/* Styling buttons */
+.buttons > a{
+    right:0;
+    padding-left: 0;
+    padding-right: 45px;
+    text-decoration: none;
+    color: #333; 
+    font-weight: 500; 
+    font-size: 14px; 
+    font-family: sans-serif;
+}
+.buttons > button{
+    background-color: rgb(2, 186, 2);
+    right:0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 18px;
+    border: none;
+}
+.signup{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-left: 0;
+    font-size: 15px;
+}
+/* Styling nav */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav > .nav-links > a {
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* Add margin before link-one */
+.nav > .nav-links > a.link-one {
+    margin-left: 30px; /* Adjust the amount of space (in pixels) as needed */
+}
+.layout-container{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 70px;
+}
+/* styling landing page */
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+     }
+/* styling landing page text  */
+.landing-text > .green-text{
+    font-family: "upwork";
+    font-size: 80px;
+    font-weight: 500;
+    color: rgb(2, 186, 2);
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+}
+.landing-text > .grey-text{
+font-family: sans-serif;
+font-size: 20px;
+font-weight: normal;
+margin: 10px;
+padding: 10px;
+line-height: 30px;
+ }
+
+.btn{
+    background-color: rgb(3, 152, 3);
+    right:0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 18px;
+    border: none;
+    margin: 15px;
+}
+.landing-column{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+}
+.trustee-text{
+    font-family: sans-serif;
+    font-size: normal;
+    color: #888686;
+}
+.t-images{
+position: relative;
+}
+.t-images > .img3{
+   position: absolute;
+   right: 222px;
+   top: -13px;
+}
+.page-two{
+    padding: 5px;
+    margin: 10px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.page-two>.left{
+    padding: 5px;
+    margin: 120px;
+    margin-right: 0px;
+
+}
+.page-two>.right{
+    padding: 5px;
+    margin-left: 0;
+    margin: 120px;
+
+}
+.page-two>.right>.btn2{
+     background-color: white;
+    right:0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 18px;
+    border: 1px solid rgb(3, 152, 3);
+    margin: 15px;
+}
+.page-two>.right>.btn2>.hire{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(3, 152, 3);
+}
+.page-three> .three-content> .linkpage3{
+    color: rgb(3, 152, 3) ;
+}
